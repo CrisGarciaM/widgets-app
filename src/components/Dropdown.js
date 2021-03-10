@@ -53,11 +53,15 @@ const Dropdown = (props) => {
           </div>
         </div>
       </div>
-      <div>
-        <p
-          style={{ color: selected.value }}
-        >{`This text is ${selected.value}!`}</p>
-      </div>
+      {window.location.pathname === '/dropdown' ? (
+        <div>
+          <p
+            style={{ color: selected.value }}
+          >{`This text is ${selected.value}!`}</p>
+        </div>
+      ) : (
+        ''
+      )}
     </React.Fragment>
   );
 };
