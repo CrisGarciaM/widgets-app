@@ -6,6 +6,7 @@ import Dropdown from './components/Dropdown';
 import Translate from './components/Translate';
 // import Route from './components/Route';
 import Header from './components/Header';
+import './styles/app.css';
 
 const items = [
   { title: 'What is react', content: 'React is a Javascript framework' },
@@ -22,13 +23,13 @@ const items = [
 const options = [
   { label: 'The Color Red', value: 'red' },
   { label: 'The Color Green', value: 'green' },
-  { label: 'A shade of Blue', value: 'blue' },
+  { label: 'The Color Orange', value: 'orange' },
 ];
 
 const App = () => {
   const [selected, setSelected] = useState(options[0]);
   return (
-    <div className="ui container segment">
+    <div className="ui container segment main-app">
       <Header />
       <Switch>
         <Route path="/" exact>
