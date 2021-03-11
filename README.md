@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+<h1 align="center">Welcome to The Widgets App 👋</h1>
+<p>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This app built with ReactJS is a combination of four small widgets, built for the solely purpose of practicing different React functionality, including hooks such as useState and useEffect, react-router-dom, and front-end libraries such as Semantic-UI. The app has a navigation bar to navigate through each widget:
 
-## Available Scripts
+- Accordion
 
-In the project directory, you can run:
+  This widget could be use as an example of a Q&A section of a larger website. It is a small display of questions that the user can click to expand the answer for each question.
 
-### `npm start`
+- Search
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  This is a search bar to find information using the Wikipedia API. Upon finishing typing the user will be given 10 results, with a title and small description. The user then has the chance to click on a particular search result and will be redirected to the correct article in Wikipedia.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Dropdown
 
-### `npm test`
+  This dropdown uses the selected option to change the color of a text using. It could be scale for different uses such as changing a website color, or display different feature depending on user selection.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Translate
 
-### `npm run build`
+  This widget uses the Google Translate API, and it is a small mock up of Google Translate service.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Install and run :rocket:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> In order to run this project, just download repository, open in your code editor and run the following command so dependencies are install correctly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm install
+```
 
-### `npm run eject`
+> To render this app in a browser, just open a terminal and run the following command
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> To be able to make requests to the Google Translate API you must get an API key. Replace the value of process.env.REACT_APP_API_KEY in the file called Convert.js with your API key.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+https://cloud.google.com/translate/
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
 
-## Learn More
+👤 **Cristofer Garcia **
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Github: [@https:\/\/github.com\/CrisGarciaM](https://github.com/https://github.com/CrisGarciaM)
+- LinkedIn: [@https:\/\/www.linkedin.com\/in\/cristofer-gm\/](https://linkedin.com/in/https://www.linkedin.com/in/cristofer-gm/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Show your support
 
-### Code Splitting
+Give a ⭐️ if this project helped you!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
