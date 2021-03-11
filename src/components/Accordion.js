@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/accordion.css';
 
 const Accordion = (props) => {
   const { items } = props;
@@ -26,7 +27,11 @@ const Accordion = (props) => {
     );
   });
 
-  return <div className="ui styled accordion">{renderedItems}</div>;
+  return (
+    <div className="ui styled accordion accordion-container">
+      {renderedItems}
+    </div>
+  );
 };
 
 export default Accordion;
