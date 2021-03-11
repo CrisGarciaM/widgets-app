@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../styles/search.css';
 
 const Search = () => {
   //Set term to be default, avoids errors for empty srsearch param in API call
@@ -41,28 +42,29 @@ const Search = () => {
   const renderedResults = results.map((result) => {
     return (
       <div className="item" key={result.pageid}>
-        <div className="right floated content">
-          <a
-            className="ui button"
-            href={`https://en.wikipedia.org?curid=${result.pageid}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            GO
-          </a>
-        </div>
         <div className="content">
           <div className="header">{result.title}</div>
+          <hr></hr>
 
           {/*Only use when sure the data return is from a reliable source*/}
           <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
+          <div className="right floated content">
+            <a
+              className="ui button"
+              href={`https://en.wikipedia.org?curid=${result.pageid}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              GO
+            </a>
+          </div>
         </div>
       </div>
     );
   });
 
   return (
-    <div>
+    <div className="search-container">
       <div className="ui form">
         <div className="field">
           <label>Enter Search Term</label>
