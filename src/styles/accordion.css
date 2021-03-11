@@ -1,0 +1,9 @@
+.accordion-container {
+  width: 100% !important;
+  background-color: #2f2fa2 !important;
+}
+
+.accordion-container .title,
+.accordion-container .content {
+  color: white !important;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 import Convert from './Convert';
+import '../styles/translate.css';
 
 const options = [
   {
@@ -22,7 +23,7 @@ const Translate = () => {
   const [text, setText] = useState('');
 
   return (
-    <div>
+    <div className="traslate-container">
       <div className="ui form">
         <div className="field">
           <label>Enter Text</label>

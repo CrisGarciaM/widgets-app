@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import '../styles/dropdown.css';
 
 const Dropdown = (props) => {
   const { options, selected, onSelectedChange, label } = props;
@@ -37,7 +38,7 @@ const Dropdown = (props) => {
   });
 
   return (
-    <React.Fragment>
+    <div className="dropdown-container">
       <div ref={ref} className="ui form">
         <div className="field">
           <label className="label">{label}</label>
@@ -54,7 +55,7 @@ const Dropdown = (props) => {
         </div>
       </div>
       {window.location.pathname === '/dropdown' ? (
-        <div>
+        <div className="text-container">
           <p
             style={{ color: selected.value }}
           >{`This text is ${selected.value}!`}</p>
@@ -62,7 +63,7 @@ const Dropdown = (props) => {
       ) : (
         ''
       )}
-    </React.Fragment>
+    </div>
   );
 };
 
