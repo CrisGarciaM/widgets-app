@@ -1,21 +1,22 @@
 import React from 'react';
-import Link from './Link';
+import { NavLink } from 'react-router-dom';
+// import Link from './Link';
 
 const Header = () => {
   return (
-    <div className="ui four item menu">
-      <Link href="/" className="item">
+    <div className="ui four item menu header-container">
+      <NavLink to="/" className="item" exact={true}>
         Accordion
-      </Link>
-      <Link href="/list" className="item">
+      </NavLink>
+      <NavLink to="/list" className="item">
         Search
-      </Link>
-      <Link href="/dropdown" className="item">
+      </NavLink>
+      <NavLink to="/dropdown" className="item">
         Dropdown
-      </Link>
-      <Link href="/translate" className="item">
+      </NavLink>
+      <NavLink to="/translate" className="item" a>
         Translate
-      </Link>
+      </NavLink>
     </div>
   );
 };

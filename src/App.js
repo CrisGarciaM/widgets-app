@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Accordion from './components/Accordion';
 import Search from './components/Search';
 import Dropdown from './components/Dropdown';
 import Translate from './components/Translate';
-import Route from './components/Route';
+// import Route from './components/Route';
 import Header from './components/Header';
 
 const items = [
@@ -29,23 +30,25 @@ const App = () => {
   return (
     <div className="ui container segment">
       <Header />
-      <Route path="/">
-        <Accordion items={items} />
-      </Route>
-      <Route path="/list">
-        <Search />
-      </Route>
-      <Route path="/dropdown">
-        <Dropdown
-          label="Select a color"
-          options={options}
-          onSelectedChange={setSelected}
-          selected={selected}
-        />
-      </Route>
-      <Route path="/translate">
-        <Translate />
-      </Route>
+      <Switch>
+        <Route path="/" exact>
+          <Accordion items={items} />
+        </Route>
+        <Route path="/list">
+          <Search />
+        </Route>
+        <Route path="/dropdown">
+          <Dropdown
+            label="Select a color"
+            options={options}
+            onSelectedChange={setSelected}
+            selected={selected}
+          />
+        </Route>
+        <Route path="/translate">
+          <Translate />
+        </Route>
+      </Switch>
     </div>
   );
 };
