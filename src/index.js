@@ -9,3 +9,6 @@ ReactDOM.render(
   </BrowserRouter>,
   document.querySelector('#root')
 );
+
+ReactDOM.render(<App />, document.querySelector('#root'));
+
