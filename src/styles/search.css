@@ -2,7 +2,7 @@
   background-color: #2f2fa2;
   padding: 10px;
   color: white;
-  height: 80vh;
+  max-height: 85vh;
   overflow-y: scroll;
 }
 

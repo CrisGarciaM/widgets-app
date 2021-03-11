@@ -1,4 +1,12 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .main-app {
-  margin: 10px !important;
+  margin: 5px !important;
   background-color: #242582 !important;
+  height: 95vh;
 }
