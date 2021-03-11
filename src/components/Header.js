@@ -14,7 +14,7 @@ const Header = () => {
       <NavLink to="/dropdown" className="item">
         Dropdown
       </NavLink>
-      <NavLink to="/translate" className="item" a>
+      <NavLink to="/translate" className="item">
         Translate
       </NavLink>
     </div>
