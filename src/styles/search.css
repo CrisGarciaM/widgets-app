@@ -1,0 +1,12 @@
+.search-container {
+  background-color: #2f2fa2;
+  padding: 10px;
+  color: white;
+  max-height: 85vh;
+  overflow-y: scroll;
+}
+
+.field label,
+.header {
+  color: white !important;
+}
